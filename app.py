@@ -1,4 +1,4 @@
-"""A tiny natural-language-to-SQL demo for SQLite."""
+"""A natural-language-to-SQL application for SQLite."""
 
 # %% 1. Imports and settings (same cell in the notebook)
 import os
@@ -58,7 +58,7 @@ orders.customer_id refers to customers.id. amount is in rupees."""
 
     # Ask the model to write one SQLite query for the question.
     sql_prompt = ChatPromptTemplate.from_messages([
-        ("system", """You write SQLite queries for a beginner demo.
+        ("system", """You write SQLite queries for the shop database.
 Use only this schema:\n{schema}
 Return exactly one read-only SELECT query, with no markdown or explanation.
 Use a JOIN when needed. Limit lists to 10 rows."""),
