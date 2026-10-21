@@ -1,0 +1,5 @@
+streamlit>=1.40,<2
+langchain-core>=0.3,<2
+langchain-openai>=0.3,<2
+python-dotenv>=1,<2
+notebook>=7,<8
